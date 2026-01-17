@@ -14,29 +14,27 @@ header {
     display: flex;
     justify-content:  space-between;
     align-items: center;
+    margin: 1%;
  }
  header h1{
-    margin-left: 5rem;
+    margin-left: 25rem;
     color: #513720;
  }
-header img{
+ header img{
     width: 10rem;
 }
-header nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #513720;
-    margin: 0.5rem;
+.minavbar {
+   background-color: #fbf5e8;
+   font-weight: bold;   
 }
-header nav ul {
-    list-style: none;
-}
-header nav ul li{
-    margin: 1rem;
-    justify-content: space-between;
+.derecha{
+    justify-content: flex-end;
 }
 /*  estilos del main */
-  main p.des{
+main h2{
+    margin-left: 5rem;
+    color: #513720;}
+main p.des{
     text-align: justify;
     margin: 5%;
   }
@@ -76,6 +74,7 @@ main section h3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    width: 100vw;
   }
 .item-creacion{
     width: 100%;
@@ -91,7 +90,67 @@ main section img{
     height: 85%;
     object-fit: contain;
   }
+  .ubication{
+    text-align: center;
+    background-color: white;
+  }
+  .contacto{
+    background-color: white;
+    margin: 2.5%;
+    font-weight: normal;
+  }
+  .tit{
+    font-weight: bold;
+  }
+  .mapa{
+    margin-left: 10rem;
+  }
 /* Estilos de footer */
 footer {
+    background-color: white;
+    display: flex;
     text-align: center;
+    padding: 1%;
+    align-items: center;
+ }
+ footer .imgfooter{
+    display: block;
+        
+ }
+footer .deco{
+   width: 100%; 
+}
+footer .redsocial{
+    width: 40%;
+    margin: 10%;
+}
+footer p {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 2%;
+}
+footer .enlaces{
+    display: flex;
+    width: 50vw;
+}
+/* Media Queries */
+@media( max-width: 989px){
+    /* Header */
+h1{margin-left: 1rem !important;
+font-size: 5vw;}
+.logo{width: 20vw;}
+/* Main */
+h2{width: 100%;
+margin-left: 1rem !important;
+font-size: 5vw;}
+.contenedor-creaciones{
+display: grid;
+grid-template-columns: 1fr 1fr;}
+/* Footer */
+.desfooter{ font-size: 2vw;}
+footer .deco{
+margin-left: 1%;
+width: 10vh;
+height: 10vh;}
 }

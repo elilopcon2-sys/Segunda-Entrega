@@ -3,102 +3,118 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- link de mi css -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Productos✨L-Ancestral</title>
  </head>
  <body>
    <!-- Etiqueta para el banner principal -->
     <header>
-      <!-- Etiqueta para imagen del logo -->
-      <img src="../img/logo.png" alt="">
-      <!-- Etiqueta para el menú de navegación -->
-      <nav>
-      <!-- Etiqueta para listas desordenadas -->
-         <ul>
-               <!-- Etiqueta para lista de items -->
-          <li>
-            <!-- Etiqueta para enlaces -->
-             <a href="../index.html">Inicio</a>
-             <a href="productos.html">Productos</a>
-             <a href="contactos.html">Contacto</a>
-          </li>
-         </ul>
+     <!-- Etiqueta para el menú de navegación -->
+      <nav class="navbar navbar-expand-lg minavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="Logotipo"></a>      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="contactos.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productos.html">Velas Decorativas</a></li>
+                <li><a class="dropdown-item" href="productos.html">Velas Vaso</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="productos.html">Velas Personalizadas</a></li>
+              </ul>
+              </li>       
+            </ul>      
+          </div>
+        </div>
       </nav>
     </header>
     <!-- Etiqueta para el contenido principal -->
     <main>
-<!-- Etiqueta para el Subtítulo Productos -->
- <h2>Productos</h2>
- <!-- Etiqueta para imagen de Fondo -->
-  <img src="../img/fondoinicio.png" alt="" srcset="">
-  <p>Aromas que hipnotizan. Velas artesanales, diseñadas como piezas decorativas y formuladas con fragancias premium que duran, cautivan y dejan huella. Una llama suave, un aroma profundo… una experiencia que se queda contigo.</p>
-<!-- Etiqueta para la Sección de "Nuestros Productos" -->
- <section class="productos"> 
-   <!-- Subtítulo de la Sección -->
-<h3>Nuestros Productos</h3>
+      <div class="fondotitulo">
+        <h2>Productos</h2>
+      </div> 
+      <p class="des">Aromas que hipnotizan. Velas artesanales, diseñadas como piezas decorativas y formuladas con fragancias premium que duran, cautivan y dejan huella. Una llama suave, un aroma profundo… una experiencia que se queda contigo.</p>
+      <section class="productos">   
+      <h3>Nuestros Productos</h3>
 <!-- Etiqueta contenedora de las categorias de los productos-->
-<div class="contenedor-categorias">
-
-   <!-- Categoria 1 -->
-    <div class="categoria">
-       <h4>Velas Decorativas</h4>
-       <!-- Primer item -->
-       <div class="item-producto">
-       <img src="../img/vela-tipo-arco.png" alt="Vela Tipo Arco">
-       <button>Velas Tipo Arco</button>
-       </div>  
-       <!-- Segundo item -->
-       <div class="item-producto">
-       <img src="../img/velarosa.png" alt="Vela Rosa">
-       <button>Velas Rosa</button>
-       </div>  
-    </div>
-    <!-- Categoria 2 -->
-    <div class="categoria">
-      <h4>Velas en Vaso</h4> 
-      <!-- Primer item -->
-       <div class="item-producto">
-         <img src="../img/vasoflores.png" alt="Vaso Flores">
-         <button>Vaso Flores</button>
-       </div>
-       <!-- Segundo item -->
-        <div class="item-producto">
-         <img src="../img/vasodulces.png" alt="Vaso Dulces">
-         <button>Vaso Dulces</button>
+        <div class="container">
+          <div class="row">
+            <h4 class="col">Velas Decorativas</h4>
+            <h4 class="col">Velas en Vaso</h4> 
+            <h4 class="col">Velas Personalizadas</h4>
+          </div>
         </div>
-    </div>
-    <!-- Categoria 3 -->
-     <div class="categoria">
-      <h4>Velas Personalizadas</h4>
-      <!-- Primer Item -->
-       <div class="item-producto">
-         <img src="../img/velas-con-nombres.png" alt="Velas con Nombres">
-         <button>Velas Con Nombres</button>
-       </div>
-       <!-- Segundo item -->
-        <div class="item-producto">
-         <img src="../img/velas-feliz-cumpleaños.png" alt="Velas Feliz Cumpleaños">
-         <button>Velas Feliz Cumpleaños</button>
+        <div class="container">
+          <!-- Fila 1 -->
+          <div class="row">
+            <div class="col">
+            <img src="../img/vela-tipo-arco.png" alt="Vela Tipo Arco">
+            <button>Velas Tipo Arco</button>
+            </div>      
+            <div class="col">
+            <img src="../img/vasoflores.png" alt="Vaso Flores">
+            <button>Vaso Flores</button>
+            </div>      
+            <div class="col">
+            <img src="../img/velas-con-nombres.png" alt="Velas con Nombres">
+            <button>Velas Con Nombres</button>
+            </div>
+          </div> 
+          <!-- Fila 2 -->          
+          <div class="row">
+            <div class="col">
+            <img src="../img/velarosa.png" alt="Vela Rosa">
+            <button>Velas Rosa</button>
+            </div>      
+            <div class="col">
+            <img src="../img/vasodulces.png" alt="Vaso Dulces">
+            <button>Vaso Dulces</button>
+            </div>  
+            <div class="col">
+            <img src="../img/velas-feliz-cumpleaños.png" alt="Velas Feliz Cumpleaños">
+            <button>Velas Feliz Cumpleaños</button>
+            </div>
+          </div>
         </div>
-      </div>
-</div>
- </section>
+     </section>
     </main>
  <!-- Etiqueta para el pie de página -->
     <footer> 
-      <img src="../img/fondo-footer.jpeg" alt="">
-      <p>Aromas que abrazan, diseños que enamoran… detalles artesanales que iluminan espacios y dejan huella en el corazón ✨ 🎁🕯️</p>
+      <div class="imgfooter">
+      <img class="deco" src="../img/fondo-footer.jpeg" alt="Elaboración de velas">
+      </div>      
+      <p class="desfooter">Aromas que abrazan, diseños que enamoran, detalles artesanales que iluminan espacios y dejan huella en el corazón✨🎁🕯️</p>
       <!-- Etiquetas para las redes sociales -->
+       <div class="enlaces">
         <a href="https://www.instagram.com/" target="_blank">
-         <img src="../img/instagram.jpeg" alt="Enlace para instagram">
+         <img class="redsocial" src="../img/instagram.jpeg" alt="Enlace instagram">
         </a>
         <a href="https://www.facebook.com/index.php/" target="_blank">
-         <img src="../img/facebook.jpeg" alt="Enlace para Facebook">
+         <img class="redsocial" src="../img/facebook.jpeg" alt="Enlace Facebook">
         </a>
         <a href="https://web.whatsapp.com/" target="_blank">
-         <img src="../img/whatsapp.jpeg" alt="Enlace para whatsapp">
+         <img class="redsocial" src="../img/whatsapp.jpeg" alt="Enlace whatsapp">
         </a>
-    </footer>
+       </div>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
  </body>
  </html>
