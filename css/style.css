@@ -5,32 +5,37 @@
 }
 /* estilo para el body */
 body {
-    background-color: #FCF6EA;
+    background-color: #ffffff;
    font-family: "Playfair Display", serif;
    }
 /* Estilos del header */
+header .encabezado{
+   width: 100%;
+    background-color: #df948e;
+    text-align: start;    
+    }
+header h1{
+        font-size: 1.3rem;
+    }
 header { 
-    background-color: #fbf5e8;
+   background-color: #ffffff;
     display: flex;
     justify-content:  space-between;
     align-items: center;
-    margin: 1%;
+    margin: 1%;  
+    flex-direction: column;
  }
- header h1{
-    margin-left: 25rem;
-    color: #513720;
- }
- header img{
-    width: 10rem;
+header img{
+    width: 12rem;
 }
-.minavbar {
-   background-color: #fbf5e8;
-   font-weight: bold;   
+.mi-navbar{
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.derecha{
-    justify-content: flex-end;
-}
-/*  estilos del main */
 main h2{
     margin-left: 5rem;
     color: #513720;}
@@ -154,3 +159,5 @@ margin-left: 1%;
 width: 10vh;
 height: 10vh;}
 }
+
+/*# sourceMappingURL=style.css.map */
