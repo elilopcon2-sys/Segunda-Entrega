@@ -36,6 +36,7 @@ header img{
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+ /* Estilos Generales del Main */
 main h2{
     margin-left: 5rem;
     color: #513720;}
@@ -63,6 +64,7 @@ main div p{
     font-weight: bold;
     background-color:#d8dde0;
 }
+/*  Estilos Main el index */
 main section {
     background-color: #DF948E;
     background-size: 100vw;
@@ -88,13 +90,33 @@ main section h3{
     flex-direction: column;
    justify-content: center;
    align-items: center;
-
+}
+main section div .titulo{
+ background-color: rgba(0,0,0,0.5); /* semitransparente */
+ border-radius: 5px;
+ font-weight: bold;
+ color: whitesmoke;
+ padding: 1%;
+ margin: 1%;
 }
 main section img{
     width: 85%;
     height: 85%;
     object-fit: contain;
   }
+  /* Estilos del Main productos */
+  .btn-custom{
+    background-color: rgba(0,0,0,0.5); /* semitransparente */
+    border-radius: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  .redon-img{
+   width: 100%;
+   aspect-ratio: 4 / 3; 
+   
+  }
+  /*  Estilos Main de Contactos */
   .ubication{
     text-align: center;
     background-color: white;
