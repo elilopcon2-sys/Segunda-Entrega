@@ -157,14 +157,17 @@ footer .redsocial{
     margin: 1%;
     border-radius: 50%;
     border: 1px solid #d8cfc8;
-    padding: 4%;    
+    padding: 4%;       
+}
+.redsocial:hover {
+  animation: bounce 0.9s;
 }
 footer p {
     line-height: 1.8;
     width: 100%;
     font-size: 1.3rem;
     padding: 5%;
-  color: #3f3f3f; 
+   color: #3f3f3f; 
    letter-spacing: 2px;    
 }
 footer .enlaces{
