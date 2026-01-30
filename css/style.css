@@ -31,13 +31,14 @@ header img{
 .mi-navbar{
   position: sticky !important;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
   background-color: rgba(255, 255, 255, 0.75) !important;
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  min-height: 70px;
 }
  /* Estilos Generales del Main */
-main h2{
+ main h2{
     margin-left: 5rem;
     color: #513720;}
 main p.des{
@@ -130,11 +131,13 @@ main section img{
     font-weight: bold;
   }
   .mapa{
-    margin-left: 10rem;
+    margin-left: 5rem;
+    width: 100%;
   }
 /* Estilos de footer */
 footer {
-    padding: 1%;   
+    padding: 1%;
+    margin bottom: ;: 1%;   
     background-color: #f1ebe6; /* beige cálido */      
 }   
   footer span{
@@ -181,6 +184,16 @@ font-size: 5vw;}
 .contenedor-creaciones{
 display: grid;
 grid-template-columns: 1fr 1fr;}
+.mapa{ margin:0;}
+.titulos-productos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;}
+.container h4{
+  font-size: 1rem;
+  padding:4%;
+}
 /* Footer */
 .desfooter{ font-size: 2vw;}
 footer .deco{
