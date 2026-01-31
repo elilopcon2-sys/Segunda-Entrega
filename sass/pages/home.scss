@@ -1,0 +1,69 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+/*  Estilos Main del index */
+header{
+     h1{
+        font-size: 1.3rem;
+    }
+}
+main{
+     section {
+        background-color:$color-encabezadoyseccion;
+        background-size: 100vw;
+    }
+}
+main{
+     section{
+         h3{
+            width: 100vw;
+             padding: 3%;
+             margin-left: 0;
+             font-size: 1.8rem;
+             text-align: center;
+             background-color:#fbf5e8;
+            }
+        }            
+}
+.contenedor-creaciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100vw;
+}
+.item-creacion{
+    @include imagen-cards(100%, 4/5);
+    @include flex-colum-center;
+   align-items: center;
+} 
+main{
+     section {
+        div {
+            .titulo{
+            background-color: $color-boton; 
+            border-radius: 5px;
+            font-weight: bold;
+            color: $color-tipografia;
+            padding: 1%;
+            margin: 1%;}
+        }
+    }
+}
+main{
+     section{
+         img{
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+    }
+}
+@media(max-width: $bt-responsive){
+    h1{margin-left: 1rem !important;
+    font-size: 5vw;}
+    h2{width: 100%;
+    margin-left: 1rem !important;
+    font-size: 5vw;}
+    .contenedor-creaciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;}
+}

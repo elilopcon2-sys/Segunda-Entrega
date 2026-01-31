@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+
+/*  Estilos Main de Contactos */
+.ubication{
+    text-align: center;
+    background-color: $color-pricipal;
+}
+.contacto{
+    background-color: $color-pricipal;
+    margin: 2.5%;
+    font-weight: normal;
+}
+.tit{
+    font-weight: bold;
+}
+.mapa{
+    margin-left: 5rem;
+    width: 100%;
+}
+@media(max-width: $bt-responsive){
+   .mapa{ margin:0;}
+}

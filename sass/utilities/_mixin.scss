@@ -1,0 +1,27 @@
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+@mixin nav {
+  position: sticky !important;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  min-height: 70px;
+}
+@mixin estilos-texto-principal ($color-fondo) {
+    background-color: $color-fondo;
+    text-align: center;
+    font-weight: bold;
+}
+@mixin imagen-cards ($ancho,$proporcion){
+    width: $ancho;
+    aspect-ratio: $proporcion;
+}
+@mixin tamaño ($ancho, $padding){
+    width: $ancho;
+    padding: $padding;
+}

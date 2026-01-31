@@ -1,0 +1,72 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/variables" as *;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilo para el body */
+body {
+    background-color: $color-pricipal;
+   font-family: "Playfair Display", serif;
+   }   
+/* Estilos del header */
+header{
+     .encabezado{
+        width: 100%;
+        background-color: $color-encabezadoyseccion;
+        text-align: start;
+        }    
+    }
+
+header { 
+   background-color: $color-pricipal;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    margin: 1%;  
+    flex-direction: column;
+ }
+ .mi-navbar{
+    @include nav;
+}
+header{
+     img{
+        width: 12rem;
+        }
+}
+ /* Estilos Generales del Main */
+ main{
+     p.des{
+        text-align: justify;
+        margin: 5%;
+        }
+  }
+main{ 
+    .fondotitulo{
+        @include flex-colum-center;
+        background-image:url(../img/fondoinicio.png);
+        background-size: 25%;
+        height: 200px;
+    }
+}
+main{
+ div{
+    h2{
+        @include estilos-texto-principal($color-fondotitulo);
+        display: inline-block;
+        margin: 2rem 32rem;
+        color: #513720;
+      }
+    }
+}
+main{
+ div{
+    p{
+        @include estilos-texto-principal ($color-fondotitulo);
+     }
+    }
+ }
+ @media(max-width: $bt-responsive){
+   .logo{width: 20vw;}
+}
