@@ -65,8 +65,7 @@ main div h2 {
   color: #513720;
 }
 
-main div p {
-  background-color: #d8dde0;
+main div p {  
   text-align: center;
   font-weight: bold;
 }
@@ -148,10 +147,16 @@ main section img {
   font-weight: bold;
   color: whitesmoke;
 }
-
 .redon-img {
   width: 100%;
   aspect-ratio: 1.3333333333;
+}
+.img-animada{
+  transition: all 0.3s ease;
+}
+.img-animada:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 989px) {
